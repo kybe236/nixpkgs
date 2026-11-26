@@ -15,7 +15,7 @@ buildPythonPackage (finalAttrs: {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "jazzband";
+    owner = "django-commons";
     repo = "django-ical";
     tag = finalAttrs.version;
     hash = "sha256-DUe0loayGcUS7MTyLn+g0KBxbIY7VsaoQNHGSMbMI3U=";
@@ -49,8 +49,8 @@ buildPythonPackage (finalAttrs: {
 
   meta = {
     description = "iCal feeds for Django based on Django's syndication feed framework";
-    homepage = "https://github.com/jazzband/django-ical";
-    changelog = "https://github.com/jazzband/django-ical/blob/${finalAttrs.src.tag}/CHANGES.rst";
+    homepage = "https://github.com/django-commons/django-ical";
+    changelog = "https://github.com/django-commons/django-ical/blob/${finalAttrs.src.tag}/CHANGES.rst";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ kurogeek ];
   };

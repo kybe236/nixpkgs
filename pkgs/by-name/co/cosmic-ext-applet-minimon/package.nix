@@ -13,7 +13,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "1.2.0";
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
+    owner = "cosmic-ext-orbit";
     repo = "cosmic-ext-applet-minimon";
     tag = "v${finalAttrs.version}";
     hash = "sha256-0ZLyjcn+h/IUXEMbTvbyKI7Qt5YRNBxUXV/7OHRsHLU=";
@@ -42,9 +42,9 @@ rustPlatform.buildRustPackage (finalAttrs: {
   passthru.updateScript = nix-update-script { };
 
   meta = {
-    changelog = "https://github.com/cosmic-utils/cosmic-ext-applet-minimon/releases/tag/v${finalAttrs.version}";
+    changelog = "https://github.com/cosmic-ext-orbit/cosmic-ext-applet-minimon/releases/tag/v${finalAttrs.version}";
     description = "COSMIC applet for displaying CPU/Memory/Network/Disk/GPU usage in the Panel or Dock";
-    homepage = "https://github.com/cosmic-utils/cosmic-ext-applet-minimon";
+    homepage = "https://github.com/cosmic-ext-orbit/cosmic-ext-applet-minimon";
     license = lib.licenses.gpl3Only;
     mainProgram = "cosmic-ext-applet-minimon";
     maintainers = with lib.maintainers; [ HeitorAugustoLN ];

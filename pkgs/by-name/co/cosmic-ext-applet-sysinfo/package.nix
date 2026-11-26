@@ -13,7 +13,7 @@ rustPlatform.buildRustPackage {
   version = "0-unstable-2026-11-17";
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
+    owner = "cosmic-ext-orbit";
     repo = "cosmic-ext-applet-sysinfo";
     rev = "82cc15b8f4a529c16d3ad12db07db85b2ac7cc71";
     hash = "sha256-OVI1FI1Wlh1oaA7VzbDYJy2zJWrw/lSbfRiqkGlVb2A=";
@@ -51,7 +51,7 @@ rustPlatform.buildRustPackage {
 
   meta = {
     description = "Simple system info applet for COSMIC";
-    homepage = "https://github.com/cosmic-utils/cosmic-ext-applet-sysinfo";
+    homepage = "https://github.com/cosmic-ext-orbit/cosmic-ext-applet-sysinfo";
     license = lib.licenses.gpl3Only;
     mainProgram = "cosmic-ext-applet-sysinfo";
     maintainers = with lib.maintainers; [ HeitorAugustoLN ];

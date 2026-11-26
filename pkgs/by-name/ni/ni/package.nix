@@ -18,7 +18,7 @@ stdenv.mkDerivation (finalAttrs: {
   version = "30.6.0";
 
   src = fetchFromGitHub {
-    owner = "antfu-collective";
+    owner = "made-in-common";
     repo = "ni";
     tag = "v${finalAttrs.version}";
     hash = "sha256-yeaE2c/B9u1dCcbZt1Ap2slypI/mfBAPgILoLF4ndqg=";
@@ -70,8 +70,8 @@ stdenv.mkDerivation (finalAttrs: {
 
   meta = {
     description = "Use the right package manager";
-    homepage = "https://github.com/antfu-collective/ni";
-    changelog = "https://github.com/antfu-collective/ni/releases/tag/v${finalAttrs.version}";
+    homepage = "https://github.com/made-in-common/ni";
+    changelog = "https://github.com/made-in-common/ni/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ xiaoxiangmoe ];
     mainProgram = "ni";

@@ -12,7 +12,7 @@ buildPythonPackage (finalAttrs: {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "mikekap";
+    owner = "fonttools";
     repo = "unicodedata2";
     tag = finalAttrs.version;
     hash = "sha256-om+IJCVGuXA91RuweViW46scTX8TLa6dQeFo/pEhLzY=";
@@ -32,7 +32,7 @@ buildPythonPackage (finalAttrs: {
 
   meta = {
     description = "Backport and updates for the unicodedata module";
-    homepage = "https://github.com/mikekap/unicodedata2";
+    homepage = "https://github.com/fonttools/unicodedata2";
     changelog = "https://github.com/fonttools/unicodedata2/releases/tag/${finalAttrs.version}";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ sternenseemann ];

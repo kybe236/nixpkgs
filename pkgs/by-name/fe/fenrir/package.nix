@@ -13,7 +13,7 @@ buildGoModule (finalAttrs: {
   __structuredAttrs = true;
 
   src = fetchFromGitHub {
-    owner = "cyeezy08";
+    owner = "LeviathanXCDN";
     repo = "fenrirlvx";
     tag = "v${finalAttrs.version}";
     hash = "sha256-vwwNKt8GsX2+Ik9G7dungXNYIZ2LZZ/J+Qt/0yVvxvo=";
@@ -40,8 +40,8 @@ buildGoModule (finalAttrs: {
 
   meta = {
     description = "Tool for WordPress attack surface mapping, plugin fingerprinting, and offline CVE correlation";
-    homepage = "https://github.com/cyeezy08/fenrirlvx";
-    changelog = "https://github.com/cyeezy08/fenrirlvx/releases/tag/${finalAttrs.src.tag}";
+    homepage = "https://github.com/LeviathanXCDN/FenrirLVX";
+    changelog = "https://github.com/LeviathanXCDN/FenrirLVX/releases/tag/${finalAttrs.src.tag}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
     mainProgram = "fenrir";

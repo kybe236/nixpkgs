@@ -14,7 +14,7 @@ stdenv.mkDerivation (finalAttrs: {
   version = "0.5.1";
 
   src = fetchFromGitHub {
-    owner = "dmitry-s93";
+    owner = "MControlSuite";
     repo = "MControlCenter";
     rev = finalAttrs.version;
     hash = "sha256-uWxEWLb2QOZlJ1d3LbORCc81kILB9N+0bzr+xzHAa7Y=";
@@ -61,7 +61,7 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   meta = {
-    homepage = "https://github.com/dmitry-s93/MControlCenter";
+    homepage = "https://github.com/MControlSuite/MControlCenter";
     description = "Tool to change the settings of MSI laptops running Linux";
     license = lib.licenses.gpl3Plus;
     platforms = lib.platforms.linux;

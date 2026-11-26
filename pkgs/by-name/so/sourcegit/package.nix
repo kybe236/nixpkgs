@@ -25,7 +25,7 @@ buildDotnetModule (finalAttrs: {
   version = "2026.21";
 
   src = fetchFromGitHub {
-    owner = "sourcegit-scm";
+    owner = "sourcegit-org";
     repo = "sourcegit";
     tag = "v${finalAttrs.version}";
     hash = "sha256-QKelsfqnmK3q0wnXgkB4UtK9eWRlbE3xJiGf+pwW6bw=";
@@ -116,9 +116,9 @@ buildDotnetModule (finalAttrs: {
   passthru.updateScript = nix-update-script { };
 
   meta = {
-    changelog = "https://github.com/sourcegit-scm/sourcegit/releases/tag/${finalAttrs.src.tag}";
+    changelog = "https://github.com/sourcegit-org/sourcegit/releases/tag/${finalAttrs.src.tag}";
     description = "Free & OpenSource GUI client for GIT users";
-    homepage = "https://github.com/sourcegit-scm/sourcegit";
+    homepage = "https://github.com/sourcegit-org/sourcegit";
     license = lib.licenses.mit;
     mainProgram = "SourceGit";
     maintainers = with lib.maintainers; [ tomasajt ];

@@ -15,8 +15,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "2.0.0";
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
-    repo = "examine";
+    owner = "cosmic-ext-orbit";
+    repo = "cosmic-ext-examine";
     tag = finalAttrs.version;
     hash = "sha256-6U8reOzeqamX/MG/mWbso+kjuZQ6cK8j9XhuEtGZ1q4=";
   };
@@ -55,9 +55,9 @@ rustPlatform.buildRustPackage (finalAttrs: {
   passthru.updateScript = nix-update-script { };
 
   meta = {
-    changelog = "https://github.com/cosmic-utils/examine/releases/tag/${finalAttrs.version}";
+    changelog = "https://github.com/cosmic-ext-orbit/cosmic-ext-examine/releases/tag/${finalAttrs.version}";
     description = "System information viewer for the COSMIC Desktop";
-    homepage = "https://github.com/cosmic-utils/examine";
+    homepage = "https://github.com/cosmic-ext-orbit/cosmic-ext-examine";
     license = lib.licenses.gpl3Only;
     mainProgram = "examine";
     maintainers = with lib.maintainers; [ HeitorAugustoLN ];

@@ -11,7 +11,7 @@ mkTclDerivation {
   version = "0.5.0";
 
   src = fetchFromGitHub {
-    owner = "mpcjanssen";
+    owner = "dbohdan";
     repo = "tcl-fcgi";
     rev = "62452dbf3177ba9458fbb42457834ca77bdf5a82";
     hash = "sha256-RLuV4ARmGWCJTmhs7DbMWENQGj3d5ZXWb821WrgG0qA=";
@@ -27,7 +27,7 @@ mkTclDerivation {
   '';
 
   meta = {
-    homepage = "https://github.com/mpcjanssen/tcl-fcgi";
+    homepage = "https://github.com/dbohdan/tcl-fcgi";
     description = "Tcl interface for the FastCGI protocol";
     license = lib.licenses.bsd2;
     platforms = tclx.meta.platforms;

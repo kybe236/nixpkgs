@@ -24,7 +24,7 @@ buildPythonPackage (finalAttrs: {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "wtforms";
+    owner = "pallets-eco";
     repo = "wtforms";
     tag = finalAttrs.version;
     hash = "sha256-4UmvzAcEt+dsXLGfAHgG/uN4QEh9uQvMgrjWJn65wIE=";
@@ -51,8 +51,8 @@ buildPythonPackage (finalAttrs: {
 
   meta = {
     description = "Flexible forms validation and rendering library for Python";
-    homepage = "https://github.com/wtforms/wtforms";
-    changelog = "https://github.com/wtforms/wtforms/blob/${finalAttrs.src.tag}/CHANGES.rst";
+    homepage = "https://github.com/pallets-eco/wtforms";
+    changelog = "https://github.com/pallets-eco/wtforms/blob/${finalAttrs.src.tag}/CHANGES.rst";
     license = lib.licenses.bsd3;
   };
 })

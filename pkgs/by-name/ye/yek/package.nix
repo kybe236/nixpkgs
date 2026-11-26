@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage {
   version = version;
 
   src = fetchFromGitHub {
-    owner = "mohsen1";
+    owner = "prooflinedev";
     repo = "yek";
     tag = "v${version}";
     hash = "sha256-lNPao/jqdRcxj9tVGwmJC5GDxV+HOsq/hACLxQy/YTU=";
@@ -53,8 +53,8 @@ rustPlatform.buildRustPackage {
     longDescription = ''
       Tool to read text-based files, chunk them, and serialize them for LLM consumption.
     '';
-    homepage = "https://github.com/mohsen1/yek";
-    changelog = "https://github.com/mohsen1/yek/releases/tag/v${version}";
+    homepage = "https://github.com/prooflinedev/yek";
+    changelog = "https://github.com/prooflinedev/yek/releases/tag/v${version}";
     license = lib.licenses.mit;
     mainProgram = "yek";
     maintainers = with lib.maintainers; [ louis-thevenet ];

@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   __structuredAttrs = true;
 
   src = fetchFromGitHub {
-    owner = "lovasoa";
+    owner = "dezoomify";
     repo = "dezoomify-rs";
     tag = "v${finalAttrs.version}";
     hash = "sha256-Qj+qJvCk77hDw1bNgITETONZPGuFkcVJ+rzmeJGgVAs=";
@@ -50,8 +50,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
   meta = {
     description = "Zoomable image downloader for Google Arts & Culture, Zoomify, IIIF, and others";
-    changelog = "https://github.com/lovasoa/dezoomify-rs/releases/tag/${finalAttrs.src.tag}";
-    homepage = "https://github.com/lovasoa/dezoomify-rs/";
+    changelog = "https://github.com/dezoomify/dezoomify-rs/releases/tag/${finalAttrs.src.tag}";
+    homepage = "https://github.com/dezoomify/dezoomify-rs/";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [
       fsagbuya

@@ -18,7 +18,7 @@ buildPythonPackage rec {
 
   src = fetchFromGitHub {
     owner = "kclif9";
-    repo = "actronneoapi";
+    repo = "ActronAirAPI";
     tag = "v${version}";
     hash = "sha256-H4pT6gQXsjuM3fTQ1VUvg9HpZwlaAH+sTth2l2fE4yo=";
   };
@@ -42,9 +42,9 @@ buildPythonPackage rec {
   ];
 
   meta = {
-    changelog = "https://github.com/kclif9/actronneoapi/releases/tag/${src.tag}";
+    changelog = "https://github.com/kclif9/ActronAirAPI/releases/tag/${src.tag}";
     description = "Communicate with Actron Air systems via the Actron Neo API";
-    homepage = "https://github.com/kclif9/actronneoapi";
+    homepage = "https://github.com/kclif9/ActronAirAPI";
     license = lib.licenses.mit;
     maintainers = [ lib.maintainers.dotlambda ];
   };

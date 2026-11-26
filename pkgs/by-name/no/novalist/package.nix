@@ -22,7 +22,7 @@ buildNpmPackage (finalAttrs: {
   __structuredAttrs = true;
 
   src = fetchFromGitHub {
-    owner = "Drommedhar";
+    owner = "Novalist-Project";
     repo = "novalist-official";
     tag = "v${finalAttrs.version}";
     hash = "sha256-eqz+I1Z1qFvzQspeTaoZ/si+mzcT1UaJZPH0aPapuGk=";
@@ -149,8 +149,8 @@ buildNpmPackage (finalAttrs: {
 
   meta = {
     description = "Offline-first desktop application for writing novels";
-    homepage = "https://github.com/Drommedhar/novalist-official";
-    changelog = "https://github.com/Drommedhar/novalist-official/blob/v${finalAttrs.version}/CHANGELOG.md";
+    homepage = "https://github.com/Novalist-Project/novalist-official";
+    changelog = "https://github.com/Novalist-Project/novalist-official/blob/v${finalAttrs.version}/CHANGELOG.md";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ qf0xb ];
     mainProgram = "novalist";

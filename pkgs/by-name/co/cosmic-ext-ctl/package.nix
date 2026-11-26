@@ -11,7 +11,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "1.6.0";
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
+    owner = "cosmic-ext-orbit";
     repo = "cosmic-ctl";
     tag = "v${finalAttrs.version}";
     hash = "sha256-v3lNcXvSbTtCCosPD0z5ubksrBF9b0ATWfmLfF6MzvI=";
@@ -27,8 +27,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
   meta = {
     description = "CLI for COSMIC Desktop configuration management";
-    changelog = "https://github.com/cosmic-utils/cosmic-ctl/releases/tag/v${finalAttrs.version}";
-    homepage = "https://github.com/cosmic-utils/cosmic-ctl";
+    changelog = "https://github.com/cosmic-ext-orbit/cosmic-ctl/releases/tag/v${finalAttrs.version}";
+    homepage = "https://github.com/cosmic-ext-orbit/cosmic-ctl";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [ HeitorAugustoLN ];
     mainProgram = "cosmic-ctl";

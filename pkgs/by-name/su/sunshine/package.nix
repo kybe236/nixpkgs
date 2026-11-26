@@ -102,7 +102,7 @@ stdenv'.mkDerivation (finalAttrs: {
   strictDeps = true;
 
   src = fetchFromGitHub {
-    owner = "LizardByte";
+    owner = "SunshineStream";
     repo = "Sunshine";
     tag = "v${finalAttrs.version}";
     hash = "sha256-HqbswLvX/UiY3nOwxSesBMqnFAF0zKP1ueE6PwDtTNs=";
@@ -320,7 +320,7 @@ stdenv'.mkDerivation (finalAttrs: {
 
   meta = {
     description = "Game stream host for Moonlight";
-    homepage = "https://github.com/LizardByte/Sunshine";
+    homepage = "https://github.com/SunshineStream/Sunshine";
     license = lib.licenses.gpl3Only;
     mainProgram = "sunshine";
     maintainers = with lib.maintainers; [

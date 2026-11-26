@@ -20,17 +20,17 @@ buildPythonPackage (finalAttrs: {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "collective";
+    owner = "PyCalendar";
     repo = "icalendar";
     tag = "v${finalAttrs.version}";
     hash = "sha256-SrQ5Bfb3ZyUyYYvT9FkUs6pAwx9WGL+DdWTAn1N0RrA=";
   };
 
   patches = [
-    # https://github.com/collective/icalendar/pull/1661
+    # https://github.com/PyCalendar/icalendar/pull/1661
     (fetchpatch2 {
       name = "warn-on-cached-tzid-guess.patch";
-      url = "https://github.com/collective/icalendar/commit/0213619845d5ff2525de409d70dd40c0fe1d5f1f.patch?full_index=1";
+      url = "https://github.com/PyCalendar/icalendar/commit/0213619845d5ff2525de409d70dd40c0fe1d5f1f.patch?full_index=1";
       hash = "sha256-dkzQp3nsKqdDR2sACe8imYvJyNVJzBfFXpE4gXv5oiY=";
     })
   ];
@@ -70,8 +70,8 @@ buildPythonPackage (finalAttrs: {
 
   meta = {
     description = "Parser/generator of iCalendar files";
-    homepage = "https://github.com/collective/icalendar";
-    changelog = "https://github.com/collective/icalendar/blob/${finalAttrs.src.rev}/CHANGES.rst";
+    homepage = "https://github.com/PyCalendar/icalendar";
+    changelog = "https://github.com/PyCalendar/icalendar/blob/${finalAttrs.src.rev}/CHANGES.rst";
     license = lib.licenses.bsd2;
     maintainers = with lib.maintainers; [ iamanaws ];
     teams = with lib.teams; [ ngi ];

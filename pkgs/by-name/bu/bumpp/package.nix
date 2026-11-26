@@ -18,7 +18,7 @@ stdenv.mkDerivation (finalAttrs: {
   version = "12.2.0";
 
   src = fetchFromGitHub {
-    owner = "antfu-collective";
+    owner = "made-in-common";
     repo = "bumpp";
     tag = "v${finalAttrs.version}";
     hash = "sha256-AMi4qMYU1BRfLaoGHAv3VcBxeYc+TNhvWBLH+npwiUU=";
@@ -58,8 +58,8 @@ stdenv.mkDerivation (finalAttrs: {
 
   meta = {
     description = "Interactive CLI that bumps your version numbers and more";
-    homepage = "https://github.com/antfu-collective/bumpp";
-    changelog = "https://github.com/antfu-collective/bumpp/releases/tag/v${finalAttrs.version}";
+    homepage = "https://github.com/made-in-common/bumpp";
+    changelog = "https://github.com/made-in-common/bumpp/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ xiaoxiangmoe ];
     mainProgram = "bumpp";

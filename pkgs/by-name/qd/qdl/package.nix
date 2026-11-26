@@ -24,7 +24,7 @@ stdenv.mkDerivation (finalAttrs: {
   strictDeps = true;
 
   src = fetchFromGitHub {
-    owner = "linux-msm";
+    owner = "qualcomm";
     repo = "qdl";
     tag = "v${finalAttrs.version}";
     hash = "sha256-0ZlvD81tP+IvfWFGut5f257hgIs9PDdis9gE3QMwGMo=";
@@ -64,7 +64,7 @@ stdenv.mkDerivation (finalAttrs: {
   passthru.updateScript = nix-update-script { };
 
   meta = {
-    homepage = "https://github.com/linux-msm/qdl";
+    homepage = "https://github.com/qualcomm/qdl";
     description = "Tool for flashing images to Qualcomm devices";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [

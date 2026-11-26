@@ -14,12 +14,12 @@ buildGoModule {
   pname = "gvisor";
   version = "20261116.0";
 
-  # gvisor provides a synthetic go branch (https://github.com/google/gvisor/tree/go)
+  # gvisor provides a synthetic go branch (https://github.com/gvisor/gvisor/tree/go)
   # that can be used to build gvisor without bazel.
   # For updates, you should stick to the commits labeled "Merge release-** (automated)"
 
   src = fetchFromGitHub {
-    owner = "google";
+    owner = "gvisor";
     repo = "gvisor";
     rev = "3eadbee7083407d44e0a12b94a9fdf4e59293f93";
     hash = "sha256-Box8bmhxjiRCIWh5/OBCljNd0/j+nVU48D+kFQAn4VU=";
@@ -93,7 +93,7 @@ buildGoModule {
 
   meta = {
     description = "Application Kernel for Containers";
-    homepage = "https://github.com/google/gvisor";
+    homepage = "https://github.com/gvisor/gvisor";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ gpl ];
     platforms = [

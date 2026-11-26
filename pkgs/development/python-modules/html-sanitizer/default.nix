@@ -15,7 +15,7 @@ buildPythonPackage (finalAttrs: {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "matthiask";
+    owner = "feincms";
     repo = "html-sanitizer";
     tag = finalAttrs.version;
     hash = "sha256-F+af1cyHAKc7FhTBHxc+LHhE46rE0rm23ONIqFIZolo=";
@@ -43,8 +43,8 @@ buildPythonPackage (finalAttrs: {
 
   meta = {
     description = "Allowlist-based and very opinionated HTML sanitizer";
-    homepage = "https://github.com/matthiask/html-sanitizer";
-    changelog = "https://github.com/matthiask/html-sanitizer/blob/${finalAttrs.version}/CHANGELOG.rst";
+    homepage = "https://github.com/feincms/html-sanitizer";
+    changelog = "https://github.com/feincms/html-sanitizer/blob/${finalAttrs.version}/CHANGELOG.rst";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ fab ];
   };

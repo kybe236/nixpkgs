@@ -26,7 +26,7 @@ buildPythonPackage (finalAttrs: {
 
   src = fetchFromGitHub {
     owner = "biocommons";
-    repo = "biocommons.seqrepo";
+    repo = "seqrepo";
     tag = finalAttrs.version;
     hash = "sha256-JQHKBojoXbVl74JP6xfe7p/CDhf1KzWo066R7Hy6K6Q=";
   };
@@ -72,7 +72,7 @@ buildPythonPackage (finalAttrs: {
   ];
 
   meta = {
-    changelog = "https://github.com/biocommons/biocommons.seqrepo/releases/tag/${finalAttrs.src.tag}";
+    changelog = "https://github.com/biocommons/seqrepo/releases/tag/${finalAttrs.src.tag}";
     description = "Python package for storing and reading a local collection of biological sequences";
     homepage = "https://biocommons.org/en/latest/";
     license = lib.licenses.asl20;

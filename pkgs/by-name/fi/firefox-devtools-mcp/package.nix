@@ -15,7 +15,7 @@ buildNpmPackage (finalAttrs: {
 
   src = fetchFromGitHub {
     owner = "mozilla";
-    repo = "firefox-devtools-mcp";
+    repo = "firefox-mcp";
     tag = "v${finalAttrs.version}";
     hash = "sha256-B/BL2ou9l5wgAzvc0PiuMphYp/mRmw3c4bRsynugAKs=";
   };
@@ -48,8 +48,8 @@ buildNpmPackage (finalAttrs: {
 
       A local Firefox installation is required at runtime.
     '';
-    homepage = "https://github.com/mozilla/firefox-devtools-mcp";
-    changelog = "https://github.com/mozilla/firefox-devtools-mcp/blob/v${finalAttrs.version}/CHANGELOG.md";
+    homepage = "https://github.com/mozilla/firefox-mcp";
+    changelog = "https://github.com/mozilla/firefox-mcp/blob/v${finalAttrs.version}/CHANGELOG.md";
     license = with lib.licenses; [
       mit
       asl20

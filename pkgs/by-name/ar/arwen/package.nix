@@ -9,7 +9,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "0.0.5-unstable-2026-04-07";
 
   src = fetchFromGitHub {
-    owner = "nichmor";
+    owner = "nichtmacho";
     repo = "arwen";
     rev = "696351a8c208315b0dfd4a1e5c37288a689ccd2e";
     hash = "sha256-6RW8BeKjoxeO8SBz/VdZGnrRW+EIKq5NtrFdM0lx0+o=";
@@ -36,7 +36,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
       widely-used patchelf (for ELF files) and install_name_tool (for Mach-O
       files). It combines the core functionalities of both into a single tool.
     '';
-    homepage = "https://github.com/nichmor/arwen";
+    homepage = "https://github.com/nichtmacho/arwen";
     mainProgram = "arwen";
     license = lib.licenses.mit;
     platforms = lib.platforms.all;

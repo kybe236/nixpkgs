@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage {
   version = "0.0.1-unstable-2026-02-15";
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
+    owner = "cosmic-ext-orbit";
     repo = "cosmic-ext-applet-external-monitor-brightness";
     rev = "f84c46dfa89c369484cc616d15485ae1bf257803";
     hash = "sha256-uEoLhVIv25KNoDD28HIIMutxR2nv+AIapSRlz+ETGuQ=";
@@ -51,7 +51,7 @@ rustPlatform.buildRustPackage {
 
   meta = {
     description = "Applet to control the brightness of external monitors";
-    homepage = "https://github.com/cosmic-utils/cosmic-ext-applet-external-monitor-brightness";
+    homepage = "https://github.com/cosmic-ext-orbit/cosmic-ext-applet-external-monitor-brightness";
     license = lib.licenses.gpl3Only;
     mainProgram = "cosmic-ext-applet-external-monitor-brightness";
     maintainers = with lib.maintainers; [ HeitorAugustoLN ];

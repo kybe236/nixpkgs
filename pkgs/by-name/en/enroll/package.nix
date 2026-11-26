@@ -11,7 +11,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   __structuredAttrs = true;
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
+    owner = "cosmic-ext-orbit";
     repo = "enroll";
     tag = "v${finalAttrs.version}";
     hash = "sha256-DE0rqZV2YVl67cu+2oC14kk4iYm2y8IYjDgkOQzmJMo=";
@@ -32,8 +32,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
     description = "Fingerprint enrollment for COSMIC";
     license = lib.licenses.mpl20;
     maintainers = with lib.maintainers; [ marcusramberg ];
-    homepage = "https://github.com/cosmic-utils/enroll";
-    changelog = "https://github.com/cosmic-utils/enroll/releases/tag/v${finalAttrs.version}";
+    homepage = "https://github.com/cosmic-ext-orbit/enroll";
+    changelog = "https://github.com/cosmic-ext-orbit/enroll/releases/tag/v${finalAttrs.version}";
     mainProgram = "cosmic-utils-enroll";
     platforms = lib.platforms.linux;
   };

@@ -14,7 +14,7 @@ buildPythonPackage rec {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "jazzband";
+    owner = "django-commons";
     repo = "django-taggit";
     tag = version;
     hash = "sha256-QLJhO517VONuf+8rrpZ6SXMP/WWymOIKfd4eyviwCsU=";
@@ -39,8 +39,8 @@ buildPythonPackage rec {
 
   meta = {
     description = "Simple tagging for django";
-    homepage = "https://github.com/jazzband/django-taggit";
-    changelog = "https://github.com/jazzband/django-taggit/blob/${version}/CHANGELOG.rst";
+    homepage = "https://github.com/django-commons/django-taggit";
+    changelog = "https://github.com/django-commons/django-taggit/blob/${version}/CHANGELOG.rst";
     license = lib.licenses.bsd3;
   };
 }

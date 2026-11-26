@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "0.0.116";
 
   src = fetchFromGitHub {
-    owner = "NVIDIA";
+    owner = "ai-openshell";
     repo = "OpenShell";
     tag = "v${finalAttrs.version}";
     hash = "sha256-9YOAkBPFBOhvc3s/0jl0yphjwblONB6rTZXosIydCIg=";
@@ -55,7 +55,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   doInstallCheck = true;
 
   meta = {
-    changelog = "https://github.com/NVIDIA/OpenShell/releases/tag/v${finalAttrs.version}";
+    changelog = "https://github.com/ai-openshell/openshell/releases/tag/v${finalAttrs.version}";
     description = "The safe, private runtime for autonomous AI agents.";
     homepage = "https://docs.nvidia.com/openshell/index.html";
     license = lib.licenses.asl20;

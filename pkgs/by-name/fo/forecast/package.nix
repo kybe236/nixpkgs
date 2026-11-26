@@ -20,8 +20,8 @@ rustPlatform.buildRustPackage {
   __structuredAttrs = true;
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
-    repo = "forecast";
+    owner = "cosmic-ext-orbit";
+    repo = "cosmic-ext-forecast";
     rev = "86b44fa1643e72e127933a8a7e9599b84d4c73b5";
     hash = "sha256-acr3o76CQoJAMXvFGl6y6gcoiJlbOS9f5xS3SxnhueQ=";
   };
@@ -58,7 +58,7 @@ rustPlatform.buildRustPackage {
 
   meta = {
     description = "Weather app written in rust and libcosmic";
-    homepage = "https://github.com/cosmic-utils/forecast";
+    homepage = "https://github.com/cosmic-ext-orbit/cosmic-ext-forecast";
     license = lib.licenses.gpl3Only;
     maintainers = with lib.maintainers; [
       GaetanLepage

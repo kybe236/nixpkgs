@@ -12,7 +12,7 @@ buildPythonPackage rec {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "jazzband";
+    owner = "django-commons";
     repo = "django-model-utils";
     tag = version;
     hash = "sha256-iRtTYXsgD8NYG3k9ZWAr2Nwazo3HUa6RgdbMeDxc7NI=";
@@ -28,9 +28,9 @@ buildPythonPackage rec {
   pythonImportsCheck = [ "model_utils" ];
 
   meta = {
-    homepage = "https://github.com/jazzband/django-model-utils";
+    homepage = "https://github.com/django-commons/django-model-utils";
     description = "Django model mixins and utilities";
-    changelog = "https://github.com/jazzband/django-model-utils/blob/${version}/CHANGES.rst";
+    changelog = "https://github.com/django-commons/django-model-utils/blob/${version}/CHANGES.rst";
     license = lib.licenses.bsd3;
     maintainers = [ ];
   };

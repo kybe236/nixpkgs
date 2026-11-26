@@ -13,7 +13,7 @@ rustPlatform.buildRustPackage {
   version = "0-unstable-2026-11-17";
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
+    owner = "cosmic-ext-orbit";
     repo = "cosmic-ext-applet-weather";
     rev = "55530caf0d9cdcd06138f34114b6868c7c4ba9f1";
     hash = "sha256-TVjm9GuC7DRngl+pQeNeBHxlRRrDNQEVPfwRA2dyZUk=";
@@ -51,7 +51,7 @@ rustPlatform.buildRustPackage {
 
   meta = {
     description = "Simple weather info applet for COSMIC";
-    homepage = "https://github.com/cosmic-utils/cosmic-ext-applet-weather";
+    homepage = "https://github.com/cosmic-ext-orbit/cosmic-ext-applet-weather";
     license = lib.licenses.gpl3Only;
     mainProgram = "cosmic-ext-applet-weather";
     maintainers = with lib.maintainers; [ HeitorAugustoLN ];

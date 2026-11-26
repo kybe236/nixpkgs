@@ -30,7 +30,7 @@ buildPythonPackage (finalAttrs: {
   ];
 
   src = fetchFromGitHub {
-    owner = "jazzband";
+    owner = "django-commons";
     repo = "django-embed-video";
     tag = finalAttrs.version;
     hash = "sha256-aftT558x/ffbfotzPfmG2ByDBlvV4m36XD7WMzRIBXw=";
@@ -42,8 +42,8 @@ buildPythonPackage (finalAttrs: {
 
   meta = {
     description = "Django app for easy embedding YouTube and Vimeo videos and music from SoundCloud";
-    homepage = "https://github.com/jazzband/django-embed-video";
-    changelog = "https://github.com/jazzband/django-embed-video/blog/${finalAttrs.src.rev}/CHANGES.rst";
+    homepage = "https://github.com/django-commons/django-embed-video";
+    changelog = "https://github.com/django-commons/django-embed-video/blog/${finalAttrs.src.rev}/CHANGES.rst";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ grindhold ];
   };

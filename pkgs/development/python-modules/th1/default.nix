@@ -13,7 +13,7 @@ buildPythonPackage {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "yifeikong";
+    owner = "lexiforest";
     repo = "th1";
     rev = "efa682bd37c668ae00d2225deb753e01f6cd1406";
     hash = "sha256-fz5EFPO5UPPbFnqe4wE1y2lIROPByse9awyBa49o8ZE=";
@@ -34,7 +34,7 @@ buildPythonPackage {
 
   meta = {
     description = "TLS and HTTP signature and fingerprint library";
-    homepage = "https://github.com/yifeikong/th1";
+    homepage = "https://github.com/lexiforest/th1";
     license = lib.licenses.mit;
     maintainers = [ ];
   };

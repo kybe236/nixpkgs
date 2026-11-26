@@ -15,7 +15,7 @@ stdenv.mkDerivation (finalAttrs: {
   version = "21.2.0";
 
   src = fetchFromGitHub {
-    owner = "antfu-collective";
+    owner = "made-in-common";
     repo = "taze";
     tag = "v${finalAttrs.version}";
     hash = "sha256-raAtOH9fVaN8BuQASXailJLMWKUKi0zhZ+/rECcgAQo=";
@@ -63,8 +63,8 @@ stdenv.mkDerivation (finalAttrs: {
 
   meta = {
     description = "Modern cli tool that keeps your deps fresh";
-    homepage = "https://github.com/antfu-collective/taze";
-    changelog = "https://github.com/antfu-collective/taze/releases/tag/v${finalAttrs.version}";
+    homepage = "https://github.com/made-in-common/taze";
+    changelog = "https://github.com/made-in-common/taze/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ xiaoxiangmoe ];
     mainProgram = "taze";

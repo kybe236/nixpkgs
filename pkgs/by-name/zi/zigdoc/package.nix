@@ -13,7 +13,7 @@ stdenv.mkDerivation (finalAttrs: {
   version = "0.5.1";
 
   src = fetchFromGitHub {
-    owner = "rockorager";
+    owner = "baskingspot";
     repo = "zigdoc";
     tag = "v${finalAttrs.version}";
     hash = "sha256-OC84SxB0N+QbyXGAfdHDSWde16IwdCkIPbU699wnvY0=";
@@ -26,9 +26,9 @@ stdenv.mkDerivation (finalAttrs: {
   __structuredAttrs = true;
 
   meta = {
-    homepage = "https://github.com/rockorager/zigdoc";
+    homepage = "https://github.com/baskingspot/zigdoc";
     description = "CLI tool to view documentation for zig library symbols";
-    changelog = "https://github.com/rockorager/zigdoc/releases";
+    changelog = "https://github.com/baskingspot/zigdoc/releases";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ddogfoodd ];
     mainProgram = "zigdoc";

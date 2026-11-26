@@ -17,7 +17,7 @@ buildPythonPackage rec {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "Doist";
+    owner = "todoist";
     repo = "todoist-api-python";
     tag = "v${version}";
     hash = "sha256-rZKmDnVkIFX573bcvj8F9KTALBbX1y+E9NZHwKoGjDk=";
@@ -41,8 +41,8 @@ buildPythonPackage rec {
 
   meta = {
     description = "Library for the Todoist REST API";
-    homepage = "https://github.com/Doist/todoist-api-python";
-    changelog = "https://github.com/Doist/todoist-api-python/blob/${src.tag}/CHANGELOG.md";
+    homepage = "https://github.com/todoist/todoist-api-python";
+    changelog = "https://github.com/todoist/todoist-api-python/blob/${src.tag}/CHANGELOG.md";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ fab ];
   };

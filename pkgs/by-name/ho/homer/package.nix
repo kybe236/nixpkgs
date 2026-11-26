@@ -16,7 +16,7 @@ stdenvNoCC.mkDerivation rec {
   version = "26.11.4";
 
   src = fetchFromGitHub {
-    owner = "bastienwirtz";
+    owner = "homer-dashboard";
     repo = "homer";
     rev = "v${version}";
     hash = "sha256-1Gxu+ZyLwS4dhoZ5AiBDP5HT0HOOp4ZjD+mjwwsz3XQ=";
@@ -73,8 +73,8 @@ stdenvNoCC.mkDerivation rec {
 
   meta = {
     description = "Very simple static homepage for your server";
-    homepage = "https://github.com/bastienwirtz/homer";
-    changelog = "https://github.com/bastienwirtz/homer/releases";
+    homepage = "https://github.com/homer-dashboard/homer";
+    changelog = "https://github.com/homer-dashboard/homer/releases";
     license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [
       stunkymonkey

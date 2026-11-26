@@ -18,7 +18,7 @@ buildGoModule (finalAttrs: {
 
   src = fetchFromGitHub {
     owner = "asciimoo";
-    repo = "hister";
+    repo = "nogon";
     tag = "v${finalAttrs.version}";
     hash = "sha256-4B7RkqhuuEfXYxvmkoU4yHVFw5M8KJsa3E30g0sYvx0=";
   };
@@ -91,9 +91,9 @@ buildGoModule (finalAttrs: {
   };
 
   meta = {
-    changelog = "https://github.com/asciimoo/hister/releases/tag/v${finalAttrs.version}";
+    changelog = "https://github.com/asciimoo/nogon/releases/tag/v${finalAttrs.version}";
     description = "Web history on steroids - blazing fast, content-based search for visited websites";
-    homepage = "https://github.com/asciimoo/hister";
+    homepage = "https://github.com/asciimoo/nogon";
     license = lib.licenses.agpl3Plus;
     mainProgram = "hister";
     maintainers = with lib.maintainers; [ _4evy ];

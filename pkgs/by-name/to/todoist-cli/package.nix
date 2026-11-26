@@ -10,7 +10,7 @@ buildNpmPackage rec {
   version = "5.8.4";
 
   src = fetchFromGitHub {
-    owner = "Doist";
+    owner = "todoist";
     repo = "todoist-cli";
     rev = "v${version}";
     sha256 = "sha256-9jRTxFTRysq78feQ3bnNS0bUvnn+dtiMZzUnNR36VTM=";
@@ -28,7 +28,7 @@ buildNpmPackage rec {
 
   meta = {
     description = "A command-line interface for Todoist";
-    homepage = "https://github.com/Doist/todoist-cli";
+    homepage = "https://github.com/todoist/todoist-cli";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ joaosreis ];
     mainProgram = "td";

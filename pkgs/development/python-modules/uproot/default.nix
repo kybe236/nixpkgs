@@ -32,7 +32,7 @@ buildPythonPackage (finalAttrs: {
 
   src = fetchFromGitHub {
     owner = "scikit-hep";
-    repo = "uproot5";
+    repo = "uproot";
     tag = "v${finalAttrs.version}";
     hash = "sha256-uEFX5VRG6baA0NPubjTQLJo3zxOrc+rISiQUAKRDbjw=";
   };
@@ -112,8 +112,8 @@ buildPythonPackage (finalAttrs: {
 
   meta = {
     description = "ROOT I/O in pure Python and Numpy";
-    homepage = "https://github.com/scikit-hep/uproot5";
-    changelog = "https://github.com/scikit-hep/uproot5/releases/tag/${finalAttrs.src.tag}";
+    homepage = "https://github.com/scikit-hep/uproot";
+    changelog = "https://github.com/scikit-hep/uproot/releases/tag/${finalAttrs.src.tag}";
     license = lib.licenses.bsd3;
     maintainers = with lib.maintainers; [ veprbl ];
   };

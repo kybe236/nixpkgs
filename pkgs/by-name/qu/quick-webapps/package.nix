@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   version = "1.0.2";
 
   src = fetchFromGitHub {
-    owner = "cosmic-utils";
+    owner = "cosmic-ext-orbit";
     repo = "web-apps";
     tag = finalAttrs.version;
     hash = "sha256-yd4lALm7eG4NxrvaduZC1SZEE83j/nRsG2ufrfUMJJM=";
@@ -57,7 +57,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
   meta = {
     description = "Web App Manager for the COSMIC desktop";
-    homepage = "https://github.com/cosmic-utils/web-apps";
+    homepage = "https://github.com/cosmic-ext-orbit/web-apps";
     license = lib.licenses.gpl3Only;
     platforms = lib.platforms.linux;
     maintainers = with lib.maintainers; [ pluiedev ];
